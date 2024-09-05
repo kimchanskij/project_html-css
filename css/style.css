@@ -56,7 +56,7 @@ a {
 }
 
 .header__description {
-    display:;
+    display: flex;
     height: 430px;
 }
 
@@ -68,7 +68,7 @@ a {
     font-size: 45px;
     text-align: center;
     line-height: 75px;
-    
+
 }
 
 .content {
