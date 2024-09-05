@@ -355,7 +355,15 @@ a {
 }
 
 .footer__social {
-    margin-top: 80px;
+    width: 1170px;
+    height: 83px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: #f5f7f6;
+    opacity: 0.6;
 }
 
 .footer__social-items {
@@ -401,11 +409,17 @@ a {
 .footer__copyright {
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 70px;
     margin-bottom: 50px;
 }
 
 .footer__copyright-link {
+    display: block;
+    margin-bottom: 35px;
+    text-align: center;
+    text-decoration: none;
+    font-family: inherit;
     font-size: 12px;
+    font-weight: bold;
     color: #999999;
 }
