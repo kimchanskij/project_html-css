@@ -1,16 +1,13 @@
 @font-face {
-    font-family: "Open Sans";
-    src: url(/project/Lesson_3/fonts/OpenSans-Light.ttf);
-}
-
-@font-face {
-    font-family: "Open Sans Bold";
-    src: url(/project/Lesson_3/fonts/OpenSans-Bold.ttf);
+    font-family: 'Open Sans';
+    src: url(/fonts/OpenSans-Bold.woff);
+    src: url(/fonts/OpenSans-Regular.woff);
 }
 
 body {
+    width: 100%;
     margin: auto;
-    font-family: "Open Sans", sans-serif;
+    font-family: Open Sans, sans-serif;
 }
 
 
@@ -61,7 +58,6 @@ a {
 }
 
 .header__description-text {
-    font-family: "Open Sans Bold", sans-serif;
     width: 800px;
     margin: auto;
     color: white;
@@ -72,18 +68,25 @@ a {
 }
 
 .content {
+    width: 1200px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
     display: flex;
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .main {
-    width: fit-content;
-    margin-left: 170px;
+    width: 775px;
+    box-sizing: border-box;
 }
 
 .main__post {
     display: flex;
-    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .post-content {
@@ -104,21 +107,18 @@ a {
 }
 
 .post-title {
-    font-family: "Open Sans Bold", sans-serif;
     font-size: 18px;
     line-height: 24px;
     color: #000000
 }
 
 .post-time {
-    font-family: inherit;
     font-size: 12px;
-    color: #999999;
-    margin-right: 15px;
+    line-height: 18px;
+    opacity: 0.5;
 }
 
 .post-author {
-    font-family: "Open Sans Bold", sans-serif;
     font-size: 12px;
     font-weight: bold;
 }
@@ -131,14 +131,25 @@ a {
 }
 
 .aside-bar {
-    position: relative;
-    width: 270px;
-    margin-top: 60px;
-    margin-left: 150px;
+    width: 275px;
+    margin-left: 120px;
 }
 
 .aside-posts {
     position: relative;
+}
+
+.aside-posts__picture {
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+}
+
+.aside-posts__text {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .aside-posts__title,
@@ -147,33 +158,42 @@ a {
 .aside__categories-title {
     text-align: center;
     font-size: 14px;
-    font-family: "Open Sans Bold", sans-serif;
+    margin-bottom: 43px;
+    position: relative;
 }
 
 .aside-posts__title::after,
 .news__title::after,
 .tags__title::after,
 .aside__categories-title::after {
-    content: " _______ ";
+    content: " ______ ";
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
     font-size: 26px;
     color: #999966;
     opacity: 0.4;
     position: absolute;
-    right: 100px;
+    top: 0;
+    left: 102px;
+}
+
+
+.recent-post-article {
+    display: flex;
+    box-sizing: border-box;
+}
+
+
+
+.text {
+    display: block;
+    font-size: 14px;
 }
 
 .aside-posts__article {
     display: flex;
-}
-
-.info {
-    margin-left: 15px;
-}
-
-.text {
-    display: block;
-    font-family: "Open Sans Bold", sans-serif;
-    font-size: 14px;
+    box-sizing: border-box;
 }
 
 .aside-posts__article:nth-child(n+2) {
@@ -255,7 +275,6 @@ a {
 .tags__item {
     border: 2px solid #f5f7f6;
     font-size: 12px;
-    font-family: "Open Sans Bold", sans-serif;
     color: #000000;
     padding: 6px 14px;
     margin-right: 5px;
@@ -290,14 +309,12 @@ a {
 
 .aside__category-item {
     color: #000000;
-    font-family: "Open Sans Bold", sans-serif;
     font-size: 14px;
 }
 
 .aside__category-number {
     margin-left: 5px;
     font-size: 12px;
-    font-family: "Open Sans Bold", sans-serif;
     color: #999966;
 }
 
@@ -357,7 +374,6 @@ a {
 }
 
 .footer__copyright-link {
-    font-family: "Open Sans Bold", sans-serif;
     font-size: 12px;
     color: #999999;
 }
